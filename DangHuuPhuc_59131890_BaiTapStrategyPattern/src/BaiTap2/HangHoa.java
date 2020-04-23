@@ -12,8 +12,7 @@ import java.util.ArrayList;
  * @author huuph
  */
 public class HangHoa {
-    ArrayList dsHH = new ArrayList();
-    
+   
     private String tenHH,moTa;
     private int gia;
     public String setTenHH(String tenHH){
@@ -37,5 +36,9 @@ public class HangHoa {
     public int getGia(){
         return gia;
     }
-    
+    HangHoa (String tenHH,String moTa,int gia){
+        this.tenHH = tenHH;
+        this.moTa = moTa;
+        this.gia = gia;
+    }
 }

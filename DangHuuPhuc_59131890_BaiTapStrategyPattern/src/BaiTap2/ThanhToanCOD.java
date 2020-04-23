@@ -10,12 +10,11 @@ package BaiTap2;
  * @author huuph
  */
 public class ThanhToanCOD implements IThanhToan{
-
     @Override
     public double thanhToan(int tienHang) {
-        if(tienHang > 2000000){
-            return (tienHang - tienHang*2%);
-        }return tienHang;
+        if(tienHang>2000000){
+            return tienHang - tienHang*2/100;
+        }else return tienHang;
     }
     
 }

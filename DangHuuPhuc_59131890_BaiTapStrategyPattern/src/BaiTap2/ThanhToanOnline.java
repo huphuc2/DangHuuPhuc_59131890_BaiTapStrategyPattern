@@ -13,9 +13,9 @@ public class ThanhToanOnline implements IThanhToan{
 
     @Override
     public double thanhToan(int tienHang) {
-        if(this.thanhToan(tienHang) < 1000000){
-            return tienHang - tienHang*2%;
-        }     
+        if(tienHang< 1000000){
+            return tienHang - tienHang*5/100;
+        }else  return tienHang - tienHang*7/100;
         
         
     }
