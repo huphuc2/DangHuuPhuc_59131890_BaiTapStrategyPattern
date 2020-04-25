@@ -12,12 +12,9 @@ package BaiTap3;
 public class SoSanhTheoTen implements ISoSanh<SinhVien>{
 
     @Override
-    public int soSanh(SinhVien o1, SinhVien o2) {
-        if(o1.getHoTen().length() > o2.getHoTen().length()){
-            return 1;
-        }else if(o1.getHoTen().length() == o2.getHoTen().length()){
-            return 0;
-        }else return -1;
+    public int soSanh(SinhVien o1, SinhVien o2) {       
+          return  o1.getTen().compareTo(o2.getTen());
     }
+    
     
 }

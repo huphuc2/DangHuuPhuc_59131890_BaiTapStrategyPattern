@@ -12,15 +12,21 @@ import java.util.Date;
  * @author huuph
  */
 public class SinhVien {
-    private String hoTen;
+
+    private String Ten;
     private Date ngaySinh;
     private float diemTB;
-    public String setHoTen(String hoTen){
-        this.hoTen = hoTen;
-        return hoTen;
+    public SinhVien(String Ten,Date ngaySinh,float diemTB){
+        this.Ten = Ten;
+        this.ngaySinh = ngaySinh;
+        this.diemTB = diemTB;
     }
-    public String getHoTen(){
-        return hoTen;
+    public String setTen(String Ten){
+        this.Ten = Ten;
+        return Ten;
+    }
+    public String getTen(){
+        return Ten;
     }
     public Date setNgaySinh(Date ngaySinh){
         this.ngaySinh = ngaySinh;
@@ -36,7 +42,7 @@ public class SinhVien {
     public float getDiemTB( ){
         return diemTB;
     }
-    
+
     
     
 }
